@@ -1,5 +1,6 @@
 import React,{useContext,useState} from 'react';
 import {TransactionContext} from './transContext'
+import Button from '@material-ui/core/Button';
 
 
 
@@ -90,7 +91,9 @@ function Child() {
                         required  />
                 </label>
                 <br />
-                <input type="submit" value="Add Transaction" />
+                <Button
+                variant="contained"
+                 type="submit" >Add Transaction</Button>
             </form>
         </div>
     );
